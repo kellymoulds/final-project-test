@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox Practice</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="border-bottom">
+        <h1 class="text-center">Flexbox Practice</h1>
+    </header>
+    <main>
+        <h2>Part I: Practice aligning along the main axis. Add a background color to the flex-items for better clarity.</h2>
+        <section id="part-1">
+            <h3>1. Align the squares horizontally to the left</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container">
+                    <div class="square bg-olive"></div>
+                    <div class="square bg-maroon"></div>
+                    <div class="square bg-hotpink"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-1.png" alt="part 1">
+                </article>
+            </div>
+        </section>
+        <section id="part-2">
+            <h3>2. Align the squares horizontally to the right</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container">
+                    <div class="square bg-red"></div>
+                    <div class="square bg-orange"></div>
+                    <div class="square bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-2.png" alt="part 2">
+                </article>
+            </div>
+        </section>
+        <section id="part-3">
+            <h3>3. Align the squares horizontally to the center</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container">
+                    <div class="square bg-green"></div>
+                    <div class="square bg-yellow"></div>
+                    <div class="square bg-violet"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-3.png" alt="part 3">
+                </article>
+            </div>
+        </section>
+        <section id="part-4">
+            <h3>4. Align the squares to have equal space inbetween</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container">
+                    <div class="square bg-silver"></div>
+                    <div class="square bg-aqua"></div>
+                    <div class="square bg-teal"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-4.png" alt="part 4">
+                </article>
+            </div>
+        </section>
+        <h2>Part II. For the next few exercises, also add the class "height-500" to the flex-container. This will increase the container space so we can add vertical alignment along the cross axis with the "align-items" property</h2>
+        <section id="part-5">
+            <h3>5. Align the squares horizontally to the center</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="square bg-red"></div>
+                    <div class="square bg-green"></div>
+                    <div class="square bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-5.png" alt="part 5">
+                </article>
+            </div>
+        </section>
+        <section id="part-6">
+            <h3>6. Align the squares to the top right corner</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="square bg-red"></div>
+                    <div class="square bg-green"></div>
+                    <div class="square bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-6.png" alt="part 6">
+                </article>
+            </div>
+        </section>
+        <section id="part-7">
+            <h3>7. Align the squares to the bottom left and right corners</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="square bg-red"></div>
+                    <div class="square bg-green"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-7.png" alt="part 7">
+                </article>
+            </div>
+        </section>
+        <h2>Part III: Practice with changing the flex-direction. Keep the height-500 class on the flex-container</h2>
+        <section id="part-8">
+            <h3>8. Align the squares vertically to the center (HINT: similar to #5)</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="square bg-red"></div>
+                    <div class="square bg-green"></div>
+                    <div class="square bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-8.png" alt="part 8">
+                </article>
+            </div>
+        </section>
+        <section id="part-9">
+            <h3>9. Align the squares to the top/bottom right corners</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="square bg-green"></div>
+                    <div class="square bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-9.png" alt="part 9">
+                </article>
+            </div>
+        </section>
+        <section id="part-10">
+            <h3>10. Align the squares vertically to the top left</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="square bg-red"></div>
+                    <div class="square bg-green"></div>
+                    <div class="square bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-10.png" alt="part 10">
+                </article>
+            </div>
+        </section>
+        <h2>Part IV: Nesting flexboxes. Now let's create a flexbox inside a flexbox. We do this by making a flex-item also a flex-container and then nesting flex-items inside that. Notice, we've also switched to the rectangle instead of square to start.</h2>
+        <section id="part-11">
+            <h3>11. Center two squares vertically sandwiched by two rectangles</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div class="rectangle bg-red"></div>
+                    <div id="middle-column" class="rectangle">
+                        <div class="square bg-orange"></div>
+                        <div class="square bg-hotpink"></div>
+                    </div>
+                    <div class="rectangle bg-blue"></div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-11.png" alt="part 11">
+                </article>
+            </div>
+        </section>
+        <section id="part-12">
+            <h3>12. Put a square on all four corners</h3>
+            <div class="mockup-wrap">
+                <article class="flex-container height-500">
+                    <div id="left-column" class="rectangle">
+                        <div class="square bg-blue"></div>
+                        <div class="square bg-red"></div>
+                    </div>
+                    <div id="right-column" class="rectangle">
+                        <div class="square bg-orange"></div>
+                        <div class="square bg-yellow"></div>
+                    </div>
+                </article>
+                <article class="mockup">
+                    <img src="images/part-12.png" alt="part 12">
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
