@@ -94,14 +94,14 @@ main h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 60%;
+    width: 60%;
+    height: 550px;
 }
 
 .home-page #home-title-container {
     background-color: red;
     height: 200px;
-    position: relative;
+    width: 95%;
 }
 
 .home-page h2 {
@@ -110,12 +110,13 @@ main h1 {
     font-size: 4em;
 }
 
-.home-page #home-title {
+/*.home-page #home-title {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
 }
 
 .home-page #home-title-outline {
@@ -124,12 +125,28 @@ main h1 {
     right: 0;
     bottom: 0;
     left: 0;
-}
-}
+    color: none;
+
+}*/
 
 .home-page #home-subtitle-container {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: orange;
+    height: 300px;
+    width: 95%;
+}
+
+.home-page #home-main-subtitle {
+    background-color: pink;
+    width: 35%;
+
+}
+
+.home-page #home-sub-subtitle {
+    background-color: blue;
+    width: 65%;
 }
 
 /*CONTACT PAGE*/
