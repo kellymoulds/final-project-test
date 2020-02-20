@@ -1,0 +1,108 @@
+/*GLOBAL*/
+
+/*Fonts*/
+
+/*    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Calistoga', cursive;*/
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+}
+
+header nav {
+    width: 40%;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.15em;
+}
+
+.page-color {
+    height: 766px;
+    width: 100vw;
+    margin: 0px 0px;
+}
+
+.page-container {
+    /*    height: 90%;
+    width: 90%;*/
+}
+
+/*PAGE COLORS*/
+
+.home-page {
+    background-color: #FF9AA2;
+}
+
+.about-page {
+    background-color: #FFDAC1;
+}
+
+.portfolio-page {
+    background-color: #E2F0CB;
+}
+
+.resume-page {
+    background-color: #B5EAD7;
+}
+
+.contact-page {
+    background-color: #C7CEEA;
+}
+
+/*BIG PAGE TITLES*/
+
+main h1 {
+    text-align: right;
+    margin: 0px 0px;
+    padding-top: 60px;
+    padding-right: 100px;
+    font-family: 'Calistoga', cursive;
+    font-size: 4em;
+}
+
+/*HOME PAGE*/
+
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page #home-text-container {
+    display: flex;
+    background-color: red;
+    height: 200px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page h2 {}
+
+.home-page #home-text-outline {}
+
+.home-page #home-text-outline {}
+
+/*FOOTER*/
+
+.contact-page footer {
+    position: relative;
+    background-color: orange;
+    bottom: 0;
+}
+
+footer p {
+    position: absolute;
+    margin: 0px auto;
+    top: 20px;
+    left: 40px;
+    background-color: red;
+}
