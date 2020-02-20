@@ -6,6 +6,13 @@
     font-family: 'Oxygen', sans-serif;
     font-family: 'Calistoga', cursive;
 */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 
 header .nav-bar {
     background-color: red;
@@ -24,8 +31,9 @@ header nav {
 
 header nav div {
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.15em;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 300;
+    font-size: 1.45em;
 }
 
 .page-color {
@@ -80,41 +88,80 @@ main h1 {
     align-items: center;
 }
 
-.home-page #home-text-container {
+.home-page #home-container {
+    background-color: purple;
     display: flex;
-    background-color: red;
-    height: 200px;
-    width: 60%;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 80%;
+    height: 60%;
 }
 
-.home-page h2 {}
+.home-page #home-title-container {
+    background-color: red;
+    height: 200px;
+    position: relative;
+}
 
-.home-page #home-text-outline {}
+.home-page h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 4em;
+}
 
-.home-page #home-text-outline {}
+.home-page #home-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.home-page #home-title-outline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+}
+
+.home-page #home-subtitle-container {
+    display: block;
+    background-color: orange;
+}
 
 /*CONTACT PAGE*/
 
+#contact-flex-container {
+    height: 80%;
+    display: flex;
+    background: orange;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contact-page form {
-    display: inline-block;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
     background-color: red;
+    justify-content: space-between;
     width: 60%;
 }
 
-/*FOOTER*/
-
-.contact-page footer {
-    position: relative;
-    background-color: orange;
-    bottom: 0;
+form #name,
+form #email {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
 }
 
-footer p {
-    position: absolute;
-    margin: 0px auto;
-    top: 20px;
-    left: 40px;
-    background-color: red;
+.contact-page form textarea {
+    width: 90%;
+    resize: none;
+    /*    text-align: center;*/
 }
