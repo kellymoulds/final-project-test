@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,700|Calistoga&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
+    <!-- <noscript>
+    <style>
+    body {
+        opacity: 1;
+    }
+    </style>
+</noscript> -->
 </head>
 
 <body>
@@ -19,39 +26,60 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <main id="home" class="page-color page-container home-page">
-        <section id="home-container">
-            <section id="home-title-container">
-                <h2 id="home-title">Kelly Moulds</h2>
-                <h2 id="home-title-outline">Kelly Moulds</h2>
-            </section>
-            <section id="home-subtitle-container">
-                <h3 id="home-main-subtitle">subtitle text here</h3>
-                <div id="home-sub-subtitle">
+    <main>
+        <section id="home" class="page-color home-page">
+            <article class="page-container">
+                <div id="home-title-container">
+                    <h2 id="home-title">Kelly Moulds</h2>
+                    <h2 id="home-title-outline">Kelly Moulds</h2>
+                </div>
+                <div id="home-subtitle-container">
+                    <h3 id="home-main-subtitle">
+                        subtitle
+                        <br>
+                        text
+                        <br>
+                        <span>here</span></h3>
+                    <div id="home-sub-subtitle">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="about" class="page-color about-page">
+            <h1>about.</h1>
+            <article class="page-container">
+            </article>
+        </section>
+        <section id="portfolio" class="page-color portfolio-page">
+            <h1>portfolio.</h1>
+            <article class="page-container">
+            </article>
+        </section>
+        <section id="resume" class="page-color resume-page">
+            <h1>resume.</h1>
+            <article class="page-container">
+                <div id="left-resume">
                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
                 </div>
-            </section>
+                <div id="right-resume">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                </div>
+            </article>
         </section>
-    </main>
-    <main id="about" class="page-color page-container about-page">
-        <h1>about.</h1>
-    </main>
-    <main id="portfolio" class="page-color page-container portfolio-page">
-        <h1>portfolio.</h1>
-    </main>
-    <main id="resume" class="page-color page-container resume-page">
-        <h1>resume.</h1>
-    </main>
-    <main id="contact" class="page-color page-container contact-page">
-        <h1>contact.</h1>
-        <section id="contact-flex-container">
-            <form>
-                <input id="name" type="text" name="YourName" placeholder="Your Name">
-                <input id="email" type="text" name="YourEmail" placeholder="Your Email">
-                <textarea rows="15" cols="60"></textarea>
-                <button id="submit-btn" type="button" name="submit-button" value="send">SAY HELLO</button>
-            </form>
+        <section id="contact" class="page-color contact-page">
+            <h1>contact.</h1>
+            <article class="page-container">
+                <form>
+                    <input id="name" type="text" name="YourName" placeholder="Your Name">
+                    <input id="email" type="text" name="YourEmail" placeholder="Your Email">
+                    <textarea rows="20" cols="60" placeholder="Your Message"></textarea>
+                    <button id="hello-btn" type="button" name="hello-button" value="send">SAY HELLO</button>
+                </form>
+            </article>
             <footer>
                 <p>Created, designed & coded by KM</p>
             </footer>
