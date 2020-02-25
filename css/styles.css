@@ -32,19 +32,23 @@ body {
 
 /*NAV BAR*/
 
-header .nav-bar {
-    background-color: red;
+.nav-bar {
     display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100vw;
+    z-index: 10;
+    background-color: #F2DFF2;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    position: fixed;
     width: 40%;
     top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    /*    left: 50%;
+    transform: translateX(-50%);*/
+
 }
 
 header nav a {
@@ -52,11 +56,11 @@ header nav a {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 300;
     font-size: 1.45em;
-    z-index: 100;
     text-decoration: none;
     color: #ED1B3A;
     width: 60px;
     text-align: center;
+    padding: 10px 0px;
 }
 
 header nav a:hover {
@@ -732,7 +736,6 @@ main h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     transform: translate(-4px, -3px);
-
 }
 
 .home-page #home-subtitle-container {
@@ -795,8 +798,8 @@ main h1 {
 }
 
 #resume-container {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+
 }
 
 #dl-btn-container {
@@ -805,8 +808,9 @@ main h1 {
     align-items: center;
 }
 
-#resume div {
+.resume-column {
     padding: 0px 30px;
+
 }
 
 #download-btn a {
