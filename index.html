@@ -5,19 +5,13 @@
     <meta charset="utf-8">
     <title>Kelly Moulds</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,700|Calistoga&display=swap" rel="stylesheet">
+    <!--     <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,700|Calistoga&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:200,400,700|Calistoga|Spartan:200,400,800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
-    <!-- <noscript>
-    <style>
-    body {
-        opacity: 1;
-    }
-    </style>
-</noscript> -->
 </head>
 
 <body>
-    <header class="nav-bar">
+    <header id="nav-bar">
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -35,17 +29,20 @@
                 </div>
                 <div id="home-subtitle-container" class="flex-border">
                     <h3 id="home-main-subtitle" class="flex-border">
-                        subtitle
+                        analyst
                         <br>
-                        text
+                        turned
                         <br>
-                        <span>here</span></h3>
+                        <span>artist</span></h3>
                     <div id="home-sub-subtitle" class="flex-border">
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                        <h4>San Francisco Bay Area native bridging the gap between data and design.</h4>
+                        <h5>Specializing in data visualization and graphic design, the quick brown fox jumps over the lazy dog. The quick brown fox jumps.</h5>
                     </div>
                 </div>
             </article>
+            <img id="giraffe-pic" src="images/giraffe-trans.png" alt="Giraffe">
+            <img id="up-arrow" src="icons/up-arrow.svg" alt="Up">
+            <img id="down-arrow" src="icons/down-arrow.svg" alt="Down">
         </section>
         <section id="about" class="page-color about-page">
             <h1>about.</h1>
@@ -59,11 +56,22 @@
         </section>
         <section id="portfolio" class="page-color portfolio-page">
             <h1>portfolio.</h1>
-            <article class="page-container-horizontal flex-border">
-                <img id="crosswalk-pic" src="images/cross-walk-placeholder.jpg" alt="crosswalk">
-                <img id="crosswalk-pic" src="images/cross-walk-placeholder.jpg" alt="crosswalk">
-                <img id="crosswalk-pic" src="images/cross-walk-placeholder.jpg" alt="crosswalk">
+            <article id="overall-portfolio-container" class="page-container-horizontal flex-border">
+                <div id="portfolio-1" class="case-study-container">
+                    <img id="" class="sm-portfolio-pics" src="images/sm-portfolio-1.png" alt="Portfolio Item 1">
+                    <h4>Case Study 1</h4>
+                </div>
+                <div id="portfolio-2" class="case-study-container">
+                    <img id="" class="sm-portfolio-pics" src="images/sm-portfolio-2.png" alt="Portfolio Item 2">
+                    <h4>Case Study 2</h4>
+                </div>
+                <div id="portfolio-3" class="case-study-container">
+                    <img id="" class="sm-portfolio-pics" src="images/sm-portfolio-3.png" alt="Portfolio Item 3">
+                    <h4>Case Study 3</h4>
+                </div>
             </article>
+            <img id="left-arrow" class="portfolio-nav-arrows" src="icons/left-arrow.svg" alt="Left">
+            <img id="right-arrow" class="portfolio-nav-arrows" src="icons/right-arrow.svg" alt="Right">
         </section>
         <section id="resume" class="page-color resume-page">
             <h1>resume.</h1>
@@ -95,16 +103,26 @@
             <h1>contact.</h1>
             <article class="page-container-vertical flex-border">
                 <form class="flex-border">
-                    <input id="name" type="text" name="YourName" placeholder="Your Name">
-                    <input id="email" type="text" name="YourEmail" placeholder="Your Email">
-                    <textarea rows="20" cols="60" placeholder="Your Message"></textarea>
+                    <input id="name-input" class="contact-form-input" type="text" name="YourName" placeholder="Your Name">
+                    <input id="email-input" class="contact-form-input" type="email" name="YourEmail" placeholder="Your Email">
+                    <textarea id="text-area-input" class="contact-form-input" rows="20" cols="60" placeholder="Your Message"></textarea>
                     <button id="hello-btn" class="button" type="button" name="hello-button" value="send">SAY HELLO</button>
                 </form>
             </article>
-            <footer>
-                <p>Created, designed & coded by KM</p>
-            </footer>
         </section>
+        <footer>
+            <p>Created, designed & coded by KM</p>
+        </footer>
+        <aside id="portfolio-pop-up" class="page-color">
+            <article id="portfolio-pop-up-container">
+                <img id="lg-portfolio-1" class="lg-portfolio-pics" src="images/sm-portfolio-1.png" alt="Large Portfolio Item 1">
+                <div id="lg-portfolio-description-1">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+                </div>
+                <img id="x-icon" src="icons/x-icon.svg" alt="Exit">
+            </article>
+        </aside>
     </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>

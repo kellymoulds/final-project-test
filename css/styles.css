@@ -7,6 +7,10 @@
     font-family: 'Calistoga', cursive;
 */
 
+/*font-family: 'Spartan', ;
+font-family: 'Barlow Condensed', ;
+font-family: 'Calistoga', ;*/
+
 html,
 body {
     margin: 0;
@@ -14,7 +18,9 @@ body {
     border: none;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    /*    opacity: 0;*/
+    font-family: 'Spartan';
+    font-weight: 400;
+    overscroll-behavior: none
 }
 
 body {
@@ -32,7 +38,7 @@ body {
 
 /*NAV BAR*/
 
-.nav-bar {
+#nav-bar {
     display: flex;
     position: fixed;
     justify-content: center;
@@ -46,15 +52,13 @@ header nav {
     justify-content: space-between;
     width: 40%;
     top: 20px;
-    /*    left: 50%;
-    transform: translateX(-50%);*/
-
 }
 
 header nav a {
     text-transform: uppercase;
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 300;
+    /*    font-family: 'Big Shoulders Display', cursive;*/
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
     font-size: 1.45em;
     text-decoration: none;
     color: #ED1B3A;
@@ -64,15 +68,17 @@ header nav a {
 }
 
 header nav a:hover {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 header nav a.active {
     border-bottom: 1.5px solid #ED1B3A;
 }
 
+/*ALL PAGES*/
+
 .page-color {
-    height: 766px;
+    height: 750px;
     width: 100vw;
     margin: 0px 0px;
     display: flex;
@@ -82,13 +88,12 @@ header nav a.active {
     scroll-snap-align: start;
 }
 
-
 .page-container-vertical {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 85%;
     height: 550px;
 }
 
@@ -96,7 +101,7 @@ header nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 85%;
     height: 550px;
 }
 
@@ -135,10 +140,13 @@ main h1 {
 
 /*HOME PAGE*/
 
+/*Long text shadow located at bottom of CSS*/
+
 .home-page {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .home-page #page-container {
@@ -157,18 +165,323 @@ main h1 {
     align-items: center;
     height: 200px;
     width: 95%;
-    /*    position: relative;*/
 }
 
 .home-page h2 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
-    font-size: 10em;
+    /*    font-family: 'Big Shoulders Display', cursive;*/
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    font-size: 12em;
     color: rgba(0, 0, 0, 0);
     margin: 0;
     text-transform: uppercase;
+}
+
+.home-page #home-title-outline {
+    position: absolute;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transform: translate(-4px, -3px);
+}
+
+.home-page #home-subtitle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 60%;
+    z-index: 1;
+}
+
+.home-page #home-main-subtitle {
+    width: 35%;
 
 }
+
+#home-subtitle-container h3 {
+    /*    font-family: 'Big Shoulders Display', cursive;*/
+    font-family: 'Barlow Condensed';
+    font-weight: 700;
+    font-size: 2.75em;
+    line-height: 90%;
+    text-align: end;
+    border-right: 2px solid #ED1B3A;
+    padding-right: 40px;
+}
+
+#home-subtitle-container h3 span {
+    color: #ED1B3A;
+}
+
+.home-page #home-sub-subtitle {
+    width: 65%;
+    padding: 0px 40px 0px 40px;
+}
+
+.home-page h4,
+.home-page h5 {
+    font-family: 'Spartan';
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.home-page h4 {
+    font-size: 1.25em;
+    color: #ED1B3A;
+}
+
+.home-page h5 {
+    font-size: 1em;
+}
+
+.home-page #giraffe-pic {
+    width: 275px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.home-page #up-arrow {
+    position: fixed;
+    top: 12px;
+    right: 18px;
+    width: 18px;
+    z-index: 100;
+    display: none;
+}
+
+.home-page #down-arrow {
+    position: fixed;
+    bottom: 12px;
+    right: 18px;
+    width: 18px;
+    z-index: 100;
+}
+
+/*ABOUT PAGE*/
+
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#crosswalk-pic {
+    height: 100%;
+}
+
+/*PORTFOLIO PAGE*/
+
+.portfolio-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#overall-portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-page .case-study-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 0.5px solid #d9d9d9;
+    box-shadow: 2px 2px 5px #A6A6A6;
+}
+
+.portfolio-page .sm-portfolio-pics {
+    width: 95%;
+    padding-top: 10px;
+}
+
+.case-study-container h4 {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.portfolio-page #left-arrow {
+    position: absolute;
+    top: 52%;
+    left: 45px;
+    width: 45px;
+}
+
+.portfolio-page #right-arrow {
+    position: absolute;
+    top: 52%;
+    right: 45px;
+    width: 45px;
+}
+
+/*PORTFOLIO POPUP*/
+
+#portfolio-pop-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#portfolio-pop-up-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 0.25px solid black;
+    box-shadow: 3px 3px 7px black;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+#portfolio-pop-up-container img {
+    padding: 15px;
+    /*    height: 95%;*/
+}
+
+#x-icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 30px;
+}
+
+/*RESUME PAGE*/
+
+.resume-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-container {
+    display: flex;
+
+}
+
+#dl-btn-container {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-column {
+    padding: 0px 30px;
+
+}
+
+#download-btn a {
+    text-decoration: none;
+}
+
+/*CONTACT PAGE
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*#page-container {
+    height: 80%;
+    display: flex;
+    background: orange;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}*/
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page form {
+    display: flex;
+    height: 85%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+form #name-input,
+form #email-input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    padding: 12px 12px;
+    border: none;
+    font-family: 'Spartan';
+    font-weight: 400;
+    font-size: 0.75em;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: -2px 0 #ED1B3A;
+}
+
+.contact-page form textarea {
+    width: 90%;
+    padding: 12px 12px;
+    resize: none;
+    border: none;
+    font-family: 'Spartan';
+    font-weight: 400;
+    font-size: 0.75em;
+}
+
+.contact-page form textarea:focus {
+    outline: none;
+    box-shadow: -2px 0 #ED1B3A;
+
+}
+
+.button {
+    background-color: white;
+    /*    font-family: 'Big Shoulders Display',
+    cursive;*/
+    font-family: 'Barlow Condensed';
+    font-size: 1.3em;
+    border: none;
+    color: #ED1B3A;
+    text-decoration: none;
+    padding: 7px 5px 7px 5px;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 40%;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #ED1B3A;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+footer {
+    align-items: flex-end;
+    /*    align-items: center;*/
+}
+
+/*HOME PAGE - Long text shadow*/
 
 .home-page #home-title {
     position: absolute;
@@ -729,172 +1042,4 @@ main h1 {
         554px 554px #F1C7DB,
         555px 555px #F1C7DB;
 
-}
-
-.home-page #home-title-outline {
-    position: absolute;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    transform: translate(-4px, -3px);
-}
-
-.home-page #home-subtitle-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 300px;
-    width: 95%;
-    z-index: 1;
-}
-
-.home-page #home-main-subtitle {
-    width: 35%;
-
-}
-
-#home-subtitle-container h3 {
-    font-family: 'Big Shoulders Display', cursive;
-    font-weight: 700;
-    font-size: 2em;
-    text-align: end;
-
-}
-
-#home-subtitle-container h3 span {
-    color: red;
-
-}
-
-.home-page #home-sub-subtitle {
-    width: 65%;
-}
-
-/*ABOUT PAGE*/
-
-.about-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#crosswalk-pic {
-    height: 100%;
-}
-
-/*PORTFOLIO PAGE*/
-
-.portfolio-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*RESUME PAGE*/
-
-.resume-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#resume-container {
-    display: flex;
-
-}
-
-#dl-btn-container {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume-column {
-    padding: 0px 30px;
-
-}
-
-#download-btn a {
-    text-decoration: none;
-}
-
-/*CONTACT PAGE
-
-.contact-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*#page-container {
-    height: 80%;
-    display: flex;
-    background: orange;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-}*/
-
-.contact-page form {
-    display: flex;
-    height: 80%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-}
-
-form #name,
-form #email {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-}
-
-input {
-    height: 30px;
-    border: none;
-}
-
-input:focus {
-    outline: none;
-    border-left: 2px solid red;
-}
-
-.contact-page form textarea {
-    width: 90%;
-    resize: none;
-    border: none;
-}
-
-.contact-page form textarea:focus {
-    outline: none;
-    border-left: 2px solid red;
-}
-
-.button {
-    background-color: white;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 1.3em;
-    border: none;
-    color: #ED1B3A;
-    text-decoration: none;
-    padding: 7px 5px 7px 5px;
-    cursor: pointer;
-    border-radius: 100px;
-    width: 40%;
-    text-align: center;
-}
-
-.button:hover {
-    background-color: #ED1B3A;
-    color: white;
-}
-
-.button:focus {
-    outline: none;
-}
-
-footer {
-    align-items: flex-end;
-    /*    align-items: center;*/
 }
