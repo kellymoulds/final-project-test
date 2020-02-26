@@ -339,16 +339,22 @@ main h1 {
 /*PORTFOLIO POPUP*/
 
 #portfolio-pop-up {
-    display: flex;
+    /*    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    height: 750px;
+    width: 100vw;
+    margin: 0px 0px;
     background-color: rgba(0, 0, 0, 0.75);
     display: none;
     z-index: 100;
     position: absolute;
+    scroll-snap-align: center !important;
 }
 
 #portfolio-pop-up-container {
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -357,8 +363,8 @@ main h1 {
     box-shadow: 5px 5px 8px black;
     width: 80%;
     height: 80%;
-    margin: auto;
     position: relative;
+    margin: auto;
 }
 
 #lg-portfolio-1 {
@@ -538,7 +544,7 @@ input:focus {
 
 footer {
     position: absolute;
-    bottom: 20px;
+    bottom: 5%;
     margin: auto;
 }
 

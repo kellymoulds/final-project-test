@@ -77,6 +77,8 @@ $(() => {
         }
     });
 
+
+
     //
     //PORTFOLIO PAGE - POP UP FUNCTIONALITY
     //
