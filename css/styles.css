@@ -43,7 +43,7 @@ body {
     position: fixed;
     justify-content: center;
     width: 100vw;
-    z-index: 10;
+    z-index: 5;
     background-color: #F2DFF2;
 }
 
@@ -58,7 +58,7 @@ header nav a {
     text-transform: uppercase;
     /*    font-family: 'Big Shoulders Display', cursive;*/
     font-family: 'Barlow Condensed';
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.45em;
     text-decoration: none;
     color: #ED1B3A;
@@ -68,7 +68,7 @@ header nav a {
 }
 
 header nav a:hover {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 header nav a.active {
@@ -248,8 +248,9 @@ main h1 {
     top: 12px;
     right: 18px;
     width: 18px;
-    z-index: 100;
+    z-index: 10;
     display: none;
+    cursor: pointer;
 }
 
 .home-page #down-arrow {
@@ -257,7 +258,8 @@ main h1 {
     bottom: 12px;
     right: 18px;
     width: 18px;
-    z-index: 100;
+    z-index: 10;
+    cursor: pointer;
 }
 
 /*ABOUT PAGE*/
@@ -290,12 +292,19 @@ main h1 {
 .portfolio-page .case-study-container {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 31%;
     justify-content: center;
     align-items: center;
     background-color: white;
     border: 0.5px solid #d9d9d9;
     box-shadow: 2px 2px 5px #A6A6A6;
+
+}
+
+.portfolio-page .case-study-container:hover {
+    border: 0.5px solid #d9d9d9;
+    box-shadow: 5px 5px 8px #A6A6A6;
+    cursor: pointer;
 }
 
 .portfolio-page .sm-portfolio-pics {
@@ -306,6 +315,9 @@ main h1 {
 .case-study-container h4 {
     margin: 0;
     padding: 10px 0px;
+    font-family: 'Barlow Condensed';
+    font-weight: 200;
+    font-size: 1.45em;
 }
 
 .portfolio-page #left-arrow {
@@ -313,6 +325,7 @@ main h1 {
     top: 52%;
     left: 45px;
     width: 45px;
+    cursor: pointer;
 }
 
 .portfolio-page #right-arrow {
@@ -320,6 +333,7 @@ main h1 {
     top: 52%;
     right: 45px;
     width: 45px;
+    cursor: pointer;
 }
 
 /*PORTFOLIO POPUP*/
@@ -329,6 +343,9 @@ main h1 {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    z-index: 100;
+    position: absolute;
 }
 
 #portfolio-pop-up-container {
@@ -337,22 +354,47 @@ main h1 {
     align-items: center;
     background-color: white;
     border: 0.25px solid black;
-    box-shadow: 3px 3px 7px black;
+    box-shadow: 5px 5px 8px black;
     width: 80%;
     height: 80%;
+    margin: auto;
     position: relative;
 }
 
-#portfolio-pop-up-container img {
+#lg-portfolio-1 {
     padding: 15px;
-    /*    height: 95%;*/
+    height: 95%;
+}
+
+#lg-portfolio-description-1 {
+    padding: 0px 40px 0px 25px;
+}
+
+#lg-portfolio-description-1 h4,
+#lg-portfolio-description-1 h5 {
+    font-family: 'Spartan';
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+#lg-portfolio-description-1 h4 {
+    font-size: 1.25em;
+    color: #ED1B3A;
+}
+
+#lg-portfolio-description-1 h5 {
+    font-size: 1em;
 }
 
 #x-icon {
     position: absolute;
     right: 0;
-    top: 10px;
-    width: 30px;
+    top: 0;
+    padding: 20px;
+    width: 35px;
+    cursor: pointer;
 }
 
 /*RESUME PAGE*/
@@ -365,18 +407,35 @@ main h1 {
 
 #resume-container {
     display: flex;
-
-}
-
-#dl-btn-container {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
 }
 
 .resume-column {
     padding: 0px 30px;
+}
 
+#resume-container h4,
+#resume-container h5 {
+    font-family: 'Spartan';
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+#resume-container h4 {
+    font-size: 1em;
+    color: #ED1B3A;
+}
+
+#resume-container h5 {
+    font-size: 0.85em;
+}
+
+#dl-btn-container {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
 }
 
 #download-btn a {
@@ -404,6 +463,7 @@ main h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .contact-page form {
@@ -477,8 +537,17 @@ input:focus {
 }
 
 footer {
-    align-items: flex-end;
-    /*    align-items: center;*/
+    position: absolute;
+    bottom: 20px;
+    margin: auto;
+}
+
+footer p {
+    font-family: 'Barlow Condensed';
+    font-weight: 200;
+    font-size: 0.85em;
+    margin: auto;
+    text-transform: uppercase;
 }
 
 /*HOME PAGE - Long text shadow*/
@@ -1015,31 +1084,6 @@ footer {
         527px 527px #F1C7DB,
         528px 528px #F1C7DB,
         529px 529px #F1C7DB,
-        530px 530px #F1C7DB,
-        531px 531px #F1C7DB,
-        532px 532px #F1C7DB,
-        533px 533px #F1C7DB,
-        534px 534px #F1C7DB,
-        535px 535px #F1C7DB,
-        536px 536px #F1C7DB,
-        537px 537px #F1C7DB,
-        538px 538px #F1C7DB,
-        539px 539px #F1C7DB,
-        540px 540px #F1C7DB,
-        541px 541px #F1C7DB,
-        542px 542px #F1C7DB,
-        543px 543px #F1C7DB,
-        544px 544px #F1C7DB,
-        545px 545px #F1C7DB,
-        546px 546px #F1C7DB,
-        547px 547px #F1C7DB,
-        548px 548px #F1C7DB,
-        549px 549px #F1C7DB,
-        550px 550px #F1C7DB,
-        551px 551px #F1C7DB,
-        552px 552px #F1C7DB,
-        553px 553px #F1C7DB,
-        554px 554px #F1C7DB,
-        555px 555px #F1C7DB;
+        530px 530px #F1C7DB;
 
 }

@@ -55,17 +55,25 @@ $(() => {
         }
     });
 
-    // CHANGE FONT AND BACKGROUND COLOR OF NAV WHEN CHANGING PAGES
+    // CHANGE FONT AND BACKGROUND COLOR OF NAV WHEN CHANGING PAGES - NEED TO DO
 
     $(document).on('scroll', (event) => {
 
         const scrollPosition = $(document).scrollTop();
 
-        if (scrollPosition > 750) {
-            $('#nav-bar').addClass('about-page');
-            // } else {
-            //     $('#up-arrow').fadeOut('slow');
-            // }
+        if (scrollPosition <= 800) {
+            // $('#nav-bar').removeClass('.home-page');
+            console.log('were on home page');
+        } else if (scrollPosition > 800) {
+            console.log('were on about page');
+        } else if (scrollPosition > 1600) {
+            console.log('were on portfolio page');
+        } else if (scrollPosition > 2300) {
+            console.log('were on resume page');
+        } else if (scrollPosition > 3050) {
+            console.log('were on contact page');
+        } else {
+            console.log('else');
         }
     });
 
@@ -73,6 +81,14 @@ $(() => {
     //PORTFOLIO PAGE - POP UP FUNCTIONALITY
     //
 
+    $(document).on('click', '.case-study-container', (event) => {
+        $('#portfolio-pop-up').fadeIn('slow');
+    });
+
+    $(document).on('click', '#x-icon', (event) => {
+        $('#portfolio-pop-up').fadeOut('slow');
+
+    });
 
     //
     //CONTACT PAGE - FORM INTERACTIVITY
