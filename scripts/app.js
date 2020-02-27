@@ -37,6 +37,13 @@ $(() => {
 
     //NAV ARROW (SCROLL) FUNCTIONALITY
 
+    $(document).on('click', '#down-arrow', (event) => {
+        window.scrollBy(0, 700);
+    });
+
+    $(document).on('click', '#up-arrow', (event) => {
+        window.scrollBy(0, -700);
+    });
 
     //REMOVE DOWN ARROW ON CONTACT (LAST) PAGE
 
@@ -61,20 +68,36 @@ $(() => {
 
         const scrollPosition = $(document).scrollTop();
 
-        if (scrollPosition <= 800) {
-            // $('#nav-bar').removeClass('.home-page');
-            console.log('were on home page');
-        } else if (scrollPosition > 800) {
-            console.log('were on about page');
-        } else if (scrollPosition > 1600) {
-            console.log('were on portfolio page');
-        } else if (scrollPosition > 2300) {
-            console.log('were on resume page');
-        } else if (scrollPosition > 3050) {
-            console.log('were on contact page');
-        } else {
-            console.log('else');
+        // if (scrollPosition <= 800) {
+        //     // $('#nav-bar').removeClass('.home-page');
+        //     console.log('were on home page');
+        // } else if (scrollPosition > 800) {
+        //     console.log('were on about page');
+        // } else if (scrollPosition > 1600) {
+        //     console.log('were on portfolio page');
+        // } else if (scrollPosition > 2300) {
+        //     console.log('were on resume page');
+        // } else if (scrollPosition > 3050) {
+        //     console.log('were on contact page');
+        // } else {
+        //     console.log('else');
+        // }
+        if (scrollPosition < 750) {
+            $('#nav-bar').css('background-color', '#F8EDF8');
+        } else if (scrollPosition >= 750 && scrollPosition < 1500) {
+            // about page
+            $('#nav-bar').css('background-color', '#FEEBE0');
+        } else if (scrollPosition >= 1500 && scrollPosition < 2250) {
+            // portfolio page
+            $('#nav-bar').css('background-color', '#EFF6E5');
+        } else if (scrollPosition >= 2250 && scrollPosition < 3000) {
+            // resume page
+            $('#nav-bar').css('background-color', '#DAF3EA');
+        } else if (scrollPosition >= 3000) {
+            // contact page
+            $('#nav-bar').css('background-color', '#E1F5FA');
         }
+
     });
 
 
