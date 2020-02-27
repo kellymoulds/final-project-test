@@ -106,14 +106,34 @@ $(() => {
     //PORTFOLIO PAGE - POP UP FUNCTIONALITY
     //
 
-    $(document).on('click', '.case-study-container', (event) => {
-        $('#portfolio-pop-up').fadeIn('slow');
+    $(document).on('click', '#portfolio-1', (event) => {
+        $('#portfolio-pop-up-1').fadeIn('slow');
     });
 
-    $(document).on('click', '#x-icon', (event) => {
-        $('#portfolio-pop-up').fadeOut('slow');
+    $(document).on('click', '#x-icon-1', (event) => {
+        $('#portfolio-pop-up-1').fadeOut('slow');
 
     });
+
+    $(document).on('click', '#portfolio-2', (event) => {
+        $('#portfolio-pop-up-2').fadeIn('slow');
+    });
+
+    $(document).on('click', '#x-icon-2', (event) => {
+        $('#portfolio-pop-up-2').fadeOut('slow');
+
+    });
+
+    $(document).on('click', '#portfolio-3', (event) => {
+        $('#portfolio-pop-up-3').fadeIn('slow');
+    });
+
+    $(document).on('click', '#x-icon-3', (event) => {
+        $('#portfolio-pop-up-3').fadeOut('slow');
+
+    });
+
+
 
     //
     //CONTACT PAGE - FORM INTERACTIVITY

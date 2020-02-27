@@ -138,8 +138,12 @@ main h1 {
     /*    padding-top: 60px;
     padding-right: 100px;*/
     font-family: 'Barlow Condensed';
-    font-weight: 400;
+    font-weight: 700;
     font-size: 6em;
+}
+
+h1 span {
+    margin: 0;
 }
 
 /*COLOR CLASSES*/
@@ -259,6 +263,7 @@ main h1 {
 
 #home-subtitle-container h3 span {
     color: #ED1B3A;
+    margin: 0;
 }
 
 .home-page #home-sub-subtitle {
@@ -318,8 +323,26 @@ main h1 {
     align-items: center;
 }
 
+.about-page h4,
+.about-page h5 {
+    font-family: 'Spartan';
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+.about-page h4 {
+    font-size: 1.25em;
+    color: #FF8D00;
+}
+
+.about-page h5 {
+    font-size: 1em;
+}
+
 #crosswalk-pic {
-    height: 100%;
+    width: 50%;
 }
 
 /*PORTFOLIO PAGE*/
@@ -385,8 +408,9 @@ main h1 {
 }
 
 /*PORTFOLIO POPUP*/
+/*FIRST POPUP*/
 
-#portfolio-pop-up {
+#portfolio-pop-up-1 {
     /*    display: flex;
     justify-content: center;
     align-items: center;*/
@@ -400,7 +424,8 @@ main h1 {
     scroll-snap-align: center !important;
 }
 
-#portfolio-pop-up-container {
+
+#portfolio-pop-up-container-1 {
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -435,14 +460,150 @@ main h1 {
 
 #lg-portfolio-description-1 h4 {
     font-size: 1.25em;
-    color: #ED1B3A;
+    color: #B8D037;
 }
 
 #lg-portfolio-description-1 h5 {
     font-size: 1em;
 }
 
-#x-icon {
+#x-icon-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+
+/*SECOND POPUP*/
+
+#portfolio-pop-up-2 {
+    /*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    height: 750px;
+    width: 100vw;
+    margin: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    z-index: 100;
+    position: absolute;
+    scroll-snap-align: center !important;
+}
+
+
+#portfolio-pop-up-container-2 {
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 0.25px solid black;
+    box-shadow: 5px 5px 8px black;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+#lg-portfolio-2 {
+    padding: 15px;
+    height: 95%;
+}
+
+#lg-portfolio-description-2 {
+    padding: 0px 40px 0px 25px;
+}
+
+#lg-portfolio-description-2 h4,
+#lg-portfolio-description-2 h5 {
+    font-family: 'Spartan';
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+#lg-portfolio-description-2 h4 {
+    font-size: 1.25em;
+    color: #B8D037;
+}
+
+#lg-portfolio-description-2 h5 {
+    font-size: 1em;
+}
+
+#x-icon-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+
+/*THIRD POPUP*/
+
+#portfolio-pop-up-3 {
+    /*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+    height: 750px;
+    width: 100vw;
+    margin: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
+    z-index: 100;
+    position: absolute;
+    scroll-snap-align: center !important;
+}
+
+
+#portfolio-pop-up-container-3 {
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 0.25px solid black;
+    box-shadow: 5px 5px 8px black;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+#lg-portfolio-3 {
+    padding: 15px;
+    height: 95%;
+}
+
+#lg-portfolio-description-3 {
+    padding: 0px 40px 0px 25px;
+}
+
+#lg-portfolio-description-3 h4,
+#lg-portfolio-description-3 h5 {
+    font-family: 'Spartan';
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+#lg-portfolio-description-3 h4 {
+    font-size: 1.25em;
+    color: #B8D037;
+}
+
+#lg-portfolio-description-3 h5 {
+    font-size: 1em;
+}
+
+#x-icon-3 {
     position: absolute;
     right: 0;
     top: 0;
@@ -464,7 +625,7 @@ main h1 {
 }
 
 .resume-column {
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
 #resume-container h4,
@@ -478,7 +639,7 @@ main h1 {
 
 #resume-container h4 {
     font-size: 1em;
-    color: #ED1B3A;
+    color: #00C1AB;
 }
 
 #resume-container h5 {
@@ -490,6 +651,7 @@ main h1 {
     width: 60%;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 #download-btn a {
@@ -565,14 +727,13 @@ input:focus {
 
 }
 
+/*BUTTONS*/
+
 .button {
-    background-color: white;
-    /*    font-family: 'Big Shoulders Display',
-    cursive;*/
+    color: white;
     font-family: 'Barlow Condensed';
     font-size: 1.3em;
     border: none;
-    color: #ED1B3A;
     text-decoration: none;
     padding: 7px 5px 7px 5px;
     cursor: pointer;
@@ -581,13 +742,24 @@ input:focus {
     text-align: center;
 }
 
-.button:hover {
-    background-color: #ED1B3A;
-    color: white;
-}
-
 .button:focus {
     outline: none;
+}
+
+#download-btn {
+    background-color: #00C1AB;
+}
+
+#download-btn:hover {
+    background-color: #009F8E;
+}
+
+#hello-btn {
+    background-color: #62CEEA;
+}
+
+#hello-btn:hover {
+    background-color: #1CA9C1;
 }
 
 footer {
